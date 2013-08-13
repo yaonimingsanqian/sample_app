@@ -31,4 +31,11 @@ describe "Contact page" do
   end
 end
 
+  describe "Home page" do
+    it "should have the |Home" do
+      visit '/static_pages/home'
+      expect(page).to have_title('| Home')
+    end
+  end
+
 end
